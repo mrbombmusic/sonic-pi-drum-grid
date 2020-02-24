@@ -11,7 +11,7 @@ sample9 = :drum_splash_soft
 
 live_loop :midi_piano do
   use_real_time
-  note, velocity = sync "/midi/iac_driver_bus_1/0/10/note_on" # Change this to your midi path
+  note, velocity = sync "/midi/iac_driver_bus_1/0/10/note_on" # Change this to the same midi path you selected in the p5 sketch
   puts note
   set :b, note
   sample sample1 if note == 36
