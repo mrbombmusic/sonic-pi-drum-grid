@@ -11,5 +11,6 @@ The p5.js drumgrid can be accessed here: https://editor.p5js.org/mrbombmusic/ful
 
 The code for the p5.js sketch can be found here: https://editor.p5js.org/mrbombmusic/sketches/KEtHAPkJ
 
+Watch example video here: https://youtu.be/rPh_cH0XE3s
 
 
