@@ -1,0 +1,25 @@
+sample1 = :bd_haus
+sample2 = :drum_snare_hard
+sample3 = :drum_cymbal_closed
+sample4 = :drum_cymbal_pedal
+sample5 = :drum_tom_lo_hard
+sample6 = :drum_tom_mid_hard
+sample7 = :drum_tom_hi_hard
+sample8 = :drum_cowbell
+sample9 = :drum_splash_soft
+
+live_loop :midi_piano do
+  use_real_time
+  note, velocity = sync "/midi/iac_driver_bus_1/0/10/note_on" # Change this to your midi path
+  puts note
+  set :b, note
+  sample sample1 if note == 36
+  sample sample2 if note == 46
+  sample sample3 if note == 38
+  sample sample4 if note == 42
+  sample sample5 if note == 51
+  sample sample6 if note == 48
+  sample sample7 if note == 50
+  sample sample8 if note == 49
+  sample sample9 if note == 45
+end
