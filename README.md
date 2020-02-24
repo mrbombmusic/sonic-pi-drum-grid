@@ -6,6 +6,7 @@ The p5 sketch will include availible midi outputs as checkboxes. Select one to u
 
 The Sonic Pi code can be found in the separate code file in this repository.
 Make sure the midi message is the same as the midi output you select in the checkbox for the p5 sketch.
+
 If you are not sure what midi outputs you have available, go to preferences in Sonic Pi, then I/O, and look under midi ports. There will be a list of available midi iputs and outputs.
 
 
